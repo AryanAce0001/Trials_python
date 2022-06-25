@@ -1,8 +1,9 @@
 import random
 
 def play():
-    user=input("What's your choice?\n'r' for rock, 'p' for paper, 's' for scissors ")
+    user=input("What's your choice?\n'r' for rock, 'p' for paper, 's' for scissors: ")
     computer =random.choice(['r','p','s'])
+    print(computer)
 
     if computer == user:
         return 'tie'

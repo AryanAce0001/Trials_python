@@ -29,4 +29,10 @@ def computer_guess(x):
             low= guess+1
     print('I guessed it!  (〜￣▽￣)〜  it\'s {}!'.format(guess))
 
-computer_guess(50)
+m=int(input('Please choose \n1. You(Human) \n2. Computer'))
+if m==1:
+    guess(100)
+elif m==2:
+    computer_guess(50)
+else:
+    print('ERROR! \nINVALID INPUT!')
